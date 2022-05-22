@@ -1,0 +1,12 @@
+{
+  "name": "midshot-thing",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "luxon": "^2.4.0",
+    "request": "^2.88.2",
+    "write-excel-file": "^1.4.2"
+  }
+}
