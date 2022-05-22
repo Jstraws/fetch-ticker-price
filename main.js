@@ -74,7 +74,7 @@ readStream.on('data', async data => {
     }
     await writeXlsxFile(excelData, {
         schema,
-        filePath: `./ticker-data_${DateTime.now().toFormat('yyyyMMddHHmmss')}.xlsx`,
+        filePath: `./ticker-data(${process.env.TICKER_DATET})_${DateTime.now().toFormat('yyyyMMddHHmmss')}.xlsx`,
         stickyRowsCount: 1,
     });
     errorStream.close();
